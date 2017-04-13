@@ -1,4 +1,4 @@
-package acm.event.code2createregister;
+package acm.event.code2createregister.Main;
 
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import acm.event.code2createregister.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
