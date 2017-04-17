@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(){
-        String username = usernameEditText.getText().toString();
+        final String username = usernameEditText.getText().toString();
         String password = passwordEditText.getText().toString();
         if(username.equals("") || password.equals("")) {
             usernameLayout.setError("Enter valid username");
@@ -102,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
                                     });
                             AlertDialog alertDialog = builder.create();
                             alertDialog.show();
+                            usernameLayout.setError(null);
+                            passwordLayout.setError(null);
                         } else {
                             progressDialog.dismiss();
                             usernameLayout.setError("Enter valid username");
